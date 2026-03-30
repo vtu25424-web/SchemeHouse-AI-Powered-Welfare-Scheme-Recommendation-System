@@ -3,7 +3,7 @@ from app.ingestion.scraper import scrape_schemes
 from app.database.collections import schemes_collection
 
 def update_schemes():
-    new_data = scrape_schemes("https://www.myscheme.gov.in/")
+    new_data = scrape_schemes("https://www.myscheme.gov.in")
 
     for scheme in new_data:
         schemes_collection.update_one(

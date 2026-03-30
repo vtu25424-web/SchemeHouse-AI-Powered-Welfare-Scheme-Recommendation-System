@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from app.config import MONGO_URI
+from app.utils.config import MONGO_URI
 
 client = MongoClient(MONGO_URI)
 db = client["schemehouse"]
